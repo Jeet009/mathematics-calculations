@@ -1,10 +1,15 @@
 const express = require("express");
-
 const percentageRoute = require("./routes/percentage");
 const bodyParser = require("body-parser");
 const app = express();
+
+// Creating Middleware
+
 app.use(bodyParser.json());
 app.use("/home", percentageRoute);
+
+// Listening To The Port
+
 app.listen(8080, () => {
   console.log("Connecting ... ");
   console.log("");
