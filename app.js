@@ -1,17 +1,14 @@
 const express = require("express");
-
-const percentageRoute = require("./routes/percentage");
-const bodyParser = require("body-parser");
 const app = express();
-app.use(bodyParser.json());
-app.use("/home", percentageRoute);
+
+// Listening To The Port 8080
 app.listen(8080, () => {
   console.log("Connecting ... ");
   console.log("");
   console.log("Connected To 8080 Port.");
   console.log("");
   console.log("Fetching Info ...");
-  console.log("You are using Percentage Calculator API.");
+  console.log("You are using Node JS API starter pack.");
   console.log("Developed By Jeet Mukerjee");
   console.log("");
   console.log("");
